@@ -7,7 +7,7 @@
     'version': '14.0',
     'author': "Maduka Chris Sopulu, Paul Ugwu",
     'summary': 'Billing System: To enable the the generation  of bills for individuals',
-    'depends': ['base', 'hr'],
+    'depends': ['base', 'contacts'],
     'description': "Billing System",
     "data": [
             'security\security_view.xml',

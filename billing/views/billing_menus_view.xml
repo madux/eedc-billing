@@ -21,4 +21,5 @@
     <menuitem id="view_feeder_customer_details_menu" name="Customer Class" sequence="7" parent="billing.view_configuration_menu" action="billing.action_feeder_customer_details_view_id"/>
     <menuitem id="view_marketer_view_menu" name="Marketer" sequence="8" parent="billing.view_configuration_menu" action="billing.action_marketer_view_id"/>
     <menuitem id="view_res_partner_conf_menu" name="Electricity Details" sequence="9" parent="billing.view_configuration_menu" action="billing.action_res_partner_conf_view_id"/>
+
 </odoo>
