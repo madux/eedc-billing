@@ -18,7 +18,7 @@
                 </page>
                 <page name="generated_bills" string="GENERATED BILLS">
                     <field name="bill_ids">
-                        <tree editable="bottom">
+                        <tree editable="False">
                             <field name="create_date"/>
                             <field name="transformer_id"/>
                             <field name="feeder_id"/>

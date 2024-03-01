@@ -61,8 +61,20 @@ class FeederCustomerDetails(models.Model):
 
         name = fields.Char(required=True, string='Transformer Name')
         loc_address = fields.Char(required=True)
-        book_ids = fields.One2many('book.feeder', 'transformer_id')
+        book_ids = fields.One2many('book.feeder', 'transformer_id', string='Books')
         feeder_id = fields.Many2one('feeder.feeder')
+        transformer_code = fields.Char('Transformer Code')
+        serial_no = fields.Char('Serial No.')
+        dss_type = fields.Selection(
+            selection=[
+                ('private', 'Private'),
+                ('public', 'Public'),
+                ('bulk', 'Bulk')
+            ],
+            string='DSS Type'
+        )
+        dss_make = fields.Char('DSS Make')
+        dss_capacity = fields.Integer('DSS Capacity')
 
     
     class FeederFeeder(models.Model):

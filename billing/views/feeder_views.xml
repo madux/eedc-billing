@@ -116,5 +116,37 @@
 		</field>
 	</record>
 
+    <record id="feeder_transformer_view_form" model="ir.ui.view">
+        <field name="name">feeder.transformer.view.form</field>
+        <field name="model">feeder.transformer</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="loc_address" />
+                            <field name="feeder_id" />
+                        </group>
+                        <group>
+                            <field name="transformer_code" />
+                            <field name="serial_no" />
+                            <field name="dss_type" />
+                            <field name="dss_make" />
+                            <field name="dss_capacity" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="Books" string="Books">
+                            <group>
+                                <field name="book_ids" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
 
 </odoo>
